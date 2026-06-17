@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Predictor Mundial 2026</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- Conexión a jQuery -->
+
+</head>
+
+<body>
+
+<h1>Predictor Mundial 2026</h1>
+<h3>Selecciona un grupo para generar la predicción</h3>
+
+<select id="grupo"> <!-- Opciones del grupo del mundial -->
+
+        <option value="A">Grupo A</option>
+        <option value="B">Grupo B</option>
+        <option value="C">Grupo C</option>
+        <option value="D">Grupo D</option>
+        <option value="E">Grupo E</option>
+        <option value="F">Grupo F</option>
+        <option value="G">Grupo G</option>
+        <option value="H">Grupo H</option>
+        <option value="I">Grupo I</option>
+        <option value="J">Grupo J</option>
+        <option value="K">Grupo K</option>
+        <option value="L">Grupo L</option>
+
+    </select>
+
+    <button id="btnPredecir">
+        Generar Predicción
+    </button>
+
+
+    <div id="resultado">
+        <h2>Resultados</h2>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script> <!-- Conexion al archivo JS -->
+
+</body>
+
+</html>
